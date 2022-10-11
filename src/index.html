@@ -10,12 +10,32 @@
 
 <body>
     <!-- TODO: comment after component added -->
-    <form data-widget="innogrn-form-widget">
+    <form class="widget" data-widget="number-card-form-widget">
         <div class="form-control">
-            <label for="innorgn-input">Введите номер карты</label>
-            <input id="innorgn-input" data-id="innogrn-input" type="text">
+            <ul class="cards-image">
+                <li class="card-img"  data-id="visa">
+                    <img src="https://findicons.com/files/icons/2102/credit_card_debit_card/102/visa_curved.png" alt="visa">
+                </li>
+                <li class="card-img" data-id="mastercard">
+                    <img src="https://findicons.com/files/icons/2102/credit_card_debit_card/102/mastercard_curved.png" alt="mastercard">
+                </li>
+                <li class="card-img" data-id="american express" >
+                    <img src="https://findicons.com/files/icons/2102/credit_card_debit_card/102/american_express_curved.png" alt="american express">
+                </li>
+                <li class="card-img" data-id="mir">
+                    <img src="https://toplogos.ru/images/thumbs/preview-logo-mir.png" alt="mir">
+                </li>
+                <li class="card-img" data-id="discover">
+                    <img src="https://findicons.com/files/icons/2102/credit_card_debit_card/101/discover_straight.png" alt="discover">
+                </li>
+                <li class="card-img" data-id="western union">
+                    <img src="https://findicons.com/files/icons/2395/credit_card_debit_card_and_payment_icons/102/western_union_curved_64px.png" alt="diners">
+                </li>
+            </ul>
+            <input class="widget-input" id="num-card-input" data-id="num-card-input" type="text" placeholder="Credit card number">
+            <button data-id="num-card-submit">Click to Validate</button>
         </div>
-        <button data-id="innogrn-submit">Далее</button>
+        
     </form>
 </body>
 
