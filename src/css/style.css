@@ -76,3 +76,14 @@ button {
 outline: none;
 box-shadow: 0 0 0 3px lightskyblue;
 }
+
+.valid {border: green 2px solid}
+
+.invalid{
+    border: red 2px solid;
+}
+
+.grey{
+    opacity: .5;
+    filter: grayscale(85%);
+}

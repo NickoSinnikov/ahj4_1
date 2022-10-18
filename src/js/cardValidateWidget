@@ -1,5 +1,0 @@
-export default class cardValidateWidget{
-constructor(){
-    this.numberCard = numberCard;
-}
-}
