@@ -5,17 +5,18 @@ export default class cardValidateWidget {
     this.input = null;
     this.cardImage = [];
     this.paySystem = null;
+    this.rightNum = false;
   }
 
   init() {
     this.cardImage = Array.from(document.getElementsByClassName("card-img"));
     this.input = document.getElementById("num-card-input");
 
-    console.log(this.cardImage);
     const validateButton = document.getElementById("num-card-submit");
     validateButton.addEventListener("click", event => {
       event.preventDefault();
       this.input.classList = "widget-input";
+      this.rightNum = false;
       this.validateCard(this.input.value);
     });
 
@@ -31,10 +32,12 @@ export default class cardValidateWidget {
   }
 
   validateCard(number) {
-    if (number !== " " && algLuhn(number)) {
+    if (number !== "" && algLuhn(number)) {
       this.input.classList.add("valid");
+      this.rightNum = true;
     } else {
       this.input.classList.add("invalid");
+      this.rightNum = false;
     }
   }
 

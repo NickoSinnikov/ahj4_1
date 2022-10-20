@@ -15,6 +15,6 @@ export default function algLuhn(value) {
     bEven = !bEven;
   }
   const result = nCheck % 10 == 0;
-  console.log(result);
+
   return result;
 }
